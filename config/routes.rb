@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   # get requests for the pages path go to pages controller index method
   get '/pages', to: 'pages#index'
+  get '/pages/:id', to: 'pages#show', as: 'page'
 end

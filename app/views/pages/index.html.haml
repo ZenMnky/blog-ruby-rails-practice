@@ -1,7 +1,6 @@
-
 %h1 Blog Pages
 
 
 - @pages.each do |page|
     %p
-        = page.title
+        = link_to page.title, page
