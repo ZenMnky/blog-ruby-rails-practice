@@ -2,3 +2,5 @@
 %p= @page.body 
 
 = link_to 'Edit', edit_page_path(@page)
+-# refers to http request method, NOT controller request method
+= link_to 'Delete', @page, method: :delete
